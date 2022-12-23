@@ -1,91 +1,213 @@
 *{
 	margin: 0;
-	padding: 0;
+	box-sizing: border-box;
 }
 
-#menu{
-	background-color: #d3d4d7;
-	float: left;
-	width: 50vh;
+html{
+	scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+.header{
+	
+	background-color: rgba(0,0,0,0.5);
+	height: 60px;
 	top: 0;
-	height: 100vh;
-	margin: 0;
 	position: -webkit-sticky;
 	position: sticky;
 	z-index: 101;
-
+	overflow: hidden;
 }
 
-#right{
-	background-color:  #828899;
-	height: 100vh;
-	width: 180vh;
-	margin-left: 10px;
-
+.header .nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#clubname{
-	text-align: center;
-	position: relative;
-	top: 3%;
+
+.header .nav a{
+	padding: 15px;
 	font-family: Cinzel;
-}
-
-ul { 
-  margin: 150px auto 0; 
-  padding: 0; 
-  list-style: none; 
-  display: grid;
-  width: 100%;
-  text-align: right;
-}
-li { 
-  position: relative; 
-}
-#link {
-  color: black;
-  text-decoration: none;
-  letter-spacing: 0.15em;
-  
-  display: inline-block;
-  padding: 15px 20px;
-  position: relative;
-}
-#link:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #828899;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-#link:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
-@media screen and (max-height: 300px) {
-	ul {
-		margin-top: 40px;
-	}
+	color: white;
+	text-align: center;
 }
 
 a{
 	text-decoration: none;
+}
+
+@media screen and (max-width: 645px){
+	.header{
+		height: 100px;
+	}
+	.header .nav {
+		color: white;
+		flex-wrap: wrap;
+	}
+	.header .nav a{
+		padding: 15px;
+	}
+	
+}
+
+
+
+.slide-div{
+	background: url("./woodback.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 90vh;
+	display: grid;
+	place-items: center;
+}
+
+.slide-div img{
+	border-radius: 20px;
+	width: 50%;
+}
+
+@media screen and (max-width: 800px){
+	.slide-div img{
+		width: 80%;
+		height: auto;
+	}
+}
+
+.aboutUs{
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 70px;
+	background-color: white;
 	color: black;
-}
-
-
-
-#main > div{
-	margin: 0;
-}
-
-.page{
 	height: 100vh;
-	position: absolute;
-	top: 0;
+}
+
+.aboutUs h1{
+	font-family: Cinzel;
+	font-size: 40px;
+}
+
+.aboutUs p{
+
+	font-size: 25px;
+}
+
+#aboutUs-img-container{
+	padding-top: 4vh;
+}
+
+.Events{
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 70px;
+	background-color: white;
+	color: black;
+	height: auto;
+}
+
+.Events h1{
+	font-family: Cinzel;
+	font-size: 40px;
+}
+
+.img-container{
+	display: flex;
+	justify-content: space-around;
+}
+
+.img-container > div{
+	padding: 5vh;
+}
+
+.img-container .event-text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+}
+
+.header .nav :hover{
+	background-color: #cdb48c;
+	box-shadow: 10px 5px 5px #da977c;
+	transition: 0.5s;
+}
+
+.slide-div .home-box{
+	display: block;
+	text-align: center;
+	font-family: Cinzel Decorative;
+	position: relative;
+	transform: translate(0,-50px);
+}
+
+.home-box h1{
+	font-size: 50px;
+	color: white;
+}
+
+.footer{
+	height: 70vh;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding-top: 70px;
+	font-family: oswald;
+}
+textarea{
+	width: 60vh;
+	background-color: black;
+	color: white;
+}
+
+input{
+	width: 60vh;
+	background-color: black;
+	color: white;
+}
+
+#form > div{
+	padding: 5px;
+}
+
+#form{
+	width: 70vh;
+}
+
+.contact-wrapper{
+	height: 50vh;
+	position: relative;
+	display: flex;
+	padding-top: 4vh;
+	padding-bottom: 4vh;
+	justify-content: space-around;
+}
+
+.contact-right-wrapper{
+	width: 60vh;
+	outline: 2px solid white;
+}
+
+button {
+	background-color: black;
+	color: white;
+	font-family: oswald;
+}
+
+.location{
+	width: 100%;
+	outline: 2px solid green;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.material-symbols-outlined {
+  font-size: 30px;
+  font-variation-settings:
+  'FILL' 1
 }
