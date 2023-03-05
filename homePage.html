@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AIR CLUB</title>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./script.js">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel+Decorative">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 
     <link
 rel="stylesheet"
@@ -26,7 +26,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
         <a href="Vulcanzy.html" target="_blank">Vulcanzy</a>
         <a href="#Events">Events</a>
         <a href="#team">Team</a>
-        <a href="#Contact">Contact Us</a>
+        <a href="#contact">Contact Us</a>
       </nav>
     </header>
     <div class="line"></div>
@@ -34,7 +34,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
       
       <h1 class="title"><b>AI AND ROBOTICS CLUB</b></h1>
      <h2 class="sub">NIT Andhra Pradesh</h2>
-    
     <!--
     <div class="home-box">
       <h1>AI & ROBITCS CLUB</h1>
@@ -74,7 +73,7 @@ to solve problems,build things and make things easier and simpler. </p>
         <div class="image-div">
           <div>
           <img src="nvidia.jpg" width="400px">
-          <div class="overlay">
+          <div class="overlay" id="nvidia-image">
         <div class="name">NVIDIA Deep Learning Workshop</div>
           </div>
         </div>
@@ -82,7 +81,7 @@ to solve problems,build things and make things easier and simpler. </p>
         <div class="image-div">
           <div>
           <img src="arduino-expo.jpg" width="400px">
-          <div class="overlay" >
+          <div class="overlay" id="arduino-expo-image">
         <div class="name">Arduino Expo</div>
           </div>
         </div>
@@ -90,7 +89,7 @@ to solve problems,build things and make things easier and simpler. </p>
         <div class="image-div">
           <div>
           <img src="robo-arm.jpg" width="400px">
-          <div class="overlay">
+          <div class="overlay" id="Kinova-image">
         <div class="name">Kinova Gen 3 robotics seminar</div>
           </div>
         </div>
@@ -98,7 +97,7 @@ to solve problems,build things and make things easier and simpler. </p>
         <div class="image-div">
           <div>
           <img src="laptop.jpg" width="400px">
-          <div class="overlay" >
+          <div class="overlay" id="bootcamp-image">
         <div class="name">Fundamentals of Python - Bootcamp</div>
           </div>
         </div>
@@ -108,13 +107,67 @@ to solve problems,build things and make things easier and simpler. </p>
       <div class="modal-container" id="modal-container1">
         <div class="modal-content">
         <span class="close">&times;</span>
-        <h2>Retina for Computers</h2>
         <div class="modal-img" id="modal-img1">
-          <img src="compvision.jpg">
+          <img src="compvision.jpg" width="400px">
         </div>
+          <div class="modal-heading">Retina for Computer</div>
         <div>
-          <p>Retina for computers-A workshop for beginners in computer vision,covering introduction to computer vision ,opencv library ,mediapipe framework with interative project
+          <p>A workshop for beginners in computer vision,covering introduction to computer vision ,opencv library ,mediapipe framework with interative project
 using mediapipe.</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="modal-container" id="modal-container2">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-img" id="modal-img1">
+          <img src="nvidia.jpg" width="400px">
+        </div>
+          <div class="modal-heading">NVIDIA Deep Learning Workshop</div>
+        <div>
+          <p>A deep learning workshop hosted every year,a part of nvidia deep learning institute program .The workshop covers
+fundamental of deep learning to transfer learning with interactive notebooks and assignments.</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="modal-container" id="modal-container3">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-img" id="modal-img1">
+          <img src="arduino-expo.jpg" width="400px">
+        </div>
+          <div class="modal-heading">Arduino Expo</div>
+        <div>
+          <p>A beginner friendly arduino workshop to help the robotic enthusiasts get started.The event covered basics of arduino and sensors with interactive experiments.</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="modal-container" id="modal-container4">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-img" id="modal-img1">
+          <img src="robo-arm.jpg" width="400px">
+        </div>
+          <div class="modal-heading">Kinova Gen 3 Robotics Seminar</div>
+        <div>
+          <p>A seminar on robotics by Mr.Aditya Marathe, the founder of Nugenux Robotics.</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="modal-container" id="modal-container5">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-img" id="modal-img1">
+          <img src="laptop.jpg" width="400px">
+        </div>
+          <div class="modal-heading">Fundamentals of Python - Bootcamp</div>
+        <div>
+          <p>A 6 week complete bootcamp on python,covering basics of python to getting started with dataScience libraries.
+The workshop consisted elaborate sessions on fundamentals of python ,oops and data science libraries and a project to provide hands on expeience.</p>
         </div>
       </div>
       </div>
@@ -184,6 +237,22 @@ interactive experiments.</p>
               <img src="arduino-expo.jpg">
             </div>
             <div class="member-details">
+              Phani
+            </div>
+          </div>
+          <div class="member-container">
+            <div class="member-image">
+              <img src="arduino-expo.jpg">
+            </div>
+            <div class="member-details">
+              Punya Sri
+            </div>
+          </div>
+          <div class="member-container">
+            <div class="member-image">
+              <img src="arduino-expo.jpg">
+            </div>
+            <div class="member-details">
               Pronay
             </div>
           </div>
@@ -192,7 +261,7 @@ interactive experiments.</p>
               <img src="arduino-expo.jpg">
             </div>
             <div class="member-details">
-              Punya
+              Vamshi
             </div>
           </div>
           <div class="member-container">
@@ -200,7 +269,7 @@ interactive experiments.</p>
               <img src="arduino-expo.jpg">
             </div>
             <div class="member-details">
-              Siva Sri Harsha
+              Nirnimesh
             </div>
           </div>
           <div class="member-container">
@@ -208,23 +277,7 @@ interactive experiments.</p>
               <img src="arduino-expo.jpg">
             </div>
             <div class="member-details">
-              Chaitanya Raju
-            </div>
-          </div>
-          <div class="member-container">
-            <div class="member-image">
-              <img src="arduino-expo.jpg">
-            </div>
-            <div class="member-details">
-              Anurag Kuruvada
-            </div>
-          </div>
-          <div class="member-container">
-            <div class="member-image">
-              <img src="arduino-expo.jpg">
-            </div>
-            <div class="member-details">
-              Kashik
+              Aditya
             </div>
           </div>
         </div>
@@ -240,7 +293,54 @@ interactive experiments.</p>
       <input type="radio" name="radio-buttons" id="img-2" />
       <li class="slide-container">
         <div class="slide-image">
-          <img src="https://content.r9cdn.net/rimg/dimg/db/02/06b291e8-city-14912-171317ad83a.jpg?width=1750&height=1000&xhint=3040&yhint=2553&crop=true">
+          <div class="member-container">
+            <div class="member-image">
+              <img src="arduino-expo.jpg">
+            </div>
+            <div class="member-details">
+              Bandhan Das
+            </div>
+          </div>
+          <div class="member-container">
+            <div class="member-image">
+              <img src="arduino-expo.jpg">
+            </div>
+            <div class="member-details">
+              Tejawi
+            </div>
+          </div>
+          <div class="member-container">
+            <div class="member-image">
+              <img src="arduino-expo.jpg">
+            </div>
+            <div class="member-details">
+              Rishitha
+            </div>
+          </div>
+          <div class="member-container">
+            <div class="member-image">
+              <img src="arduino-expo.jpg">
+            </div>
+            <div class="member-details">
+              Krishna Chaitanya
+            </div>
+          </div>
+          <div class="member-container">
+            <div class="member-image">
+              <img src="arduino-expo.jpg">
+            </div>
+            <div class="member-details">
+              Ala Sai
+            </div>
+          </div>
+          <div class="member-container">
+            <div class="member-image">
+              <img src="arduino-expo.jpg">
+            </div>
+            <div class="member-details">
+              Abhilash
+            </div>
+          </div>
         </div>
         <div class="carousel-controls">
           <label for="img-1" class="prev-slide">
@@ -254,7 +354,54 @@ interactive experiments.</p>
       <input type="radio" name="radio-buttons" id="img-3" />
       <li class="slide-container">
         <div class="slide-image">
-          <img src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg">
+          <div class="member-container">
+            <div class="member-image">
+              <img src="arduino-expo.jpg">
+            </div>
+            <div class="member-details">
+              Kashik
+            </div>
+          </div>
+          <div class="member-container">
+            <div class="member-image">
+              <img src="arduino-expo.jpg">
+            </div>
+            <div class="member-details">
+              Y/N
+            </div>
+          </div>
+          <div class="member-container">
+            <div class="member-image">
+              <img src="arduino-expo.jpg">
+            </div>
+            <div class="member-details">
+              Y/N
+            </div>
+          </div>
+          <div class="member-container">
+            <div class="member-image">
+              <img src="arduino-expo.jpg">
+            </div>
+            <div class="member-details">
+              Y/N
+            </div>
+          </div>
+          <div class="member-container">
+            <div class="member-image">
+              <img src="arduino-expo.jpg">
+            </div>
+            <div class="member-details">
+              Y/N
+            </div>
+          </div>
+          <div class="member-container">
+            <div class="member-image">
+              <img src="arduino-expo.jpg">
+            </div>
+            <div class="member-details">
+              Y/N
+            </div>
+          </div>
         </div>
         <div class="carousel-controls">
           <label for="img-2" class="prev-slide">
@@ -361,6 +508,9 @@ interactive experiments.</p>
       );
     }
   </script>
+
+
+    <script src="./script.js"></script>
 
   </body>
 </html>
